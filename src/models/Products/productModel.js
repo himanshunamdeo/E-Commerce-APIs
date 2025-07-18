@@ -1,4 +1,4 @@
-import mongoose from mongoose;
+import mongoose from "mongoose";
 
 const dimensionsSchema = new mongoose.Schema(
    {
@@ -52,6 +52,11 @@ const productSchema = new mongoose.Schema(
       meta: metaSchema,
       images: [String],
       thumbnail: String
+   },
+   {
+
+      collection: 'Products',
+      timestamps: true
    }
 )
 

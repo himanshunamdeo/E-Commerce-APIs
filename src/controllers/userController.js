@@ -33,8 +33,9 @@ const loginUser = async (req, res) => {
         res.json({ success: false, message: error.message })
     }
 }
-// Route for user Registration
 
+
+// Route for user Registration
 const registerUser = async (req, res) => {
     try {
         const { firstName, lastName, email, password } = req.body;
@@ -74,8 +75,8 @@ const registerUser = async (req, res) => {
     }
 }
 
-// Route for admin Login
 
+// Route for admin Login
 const adminLogin = async (req, res) => {
     res.json("Admin Login")
 }
